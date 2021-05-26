@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahadan</title>
+    <link rel="icon" href="images/1223.jpg" type="image/icon type">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index3.css" type="text/css">
+</head>
+<body>
+    <div class="w3-sidebar w3-bar-block w3-border-right w3-gray" style="display:none;z-index: 2;" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+        <a href="#home" class="w3-bar-item w3-button" style="text-decoration: none;">Home</a>
+        <a href="#Languages" class="w3-bar-item w3-button" style="text-decoration: none;">Laguages</a>
+        <a href="#Qualification" class="w3-bar-item w3-button" style="text-decoration: none;">Qualification</a>
+        <a href="#contact" class="w3-bar-item w3-button" style="text-decoration: none;">Contact</a>
+      </div>
+      <div class="w3-gray" style="position: fixed;width: 100%;z-index: 1;" >
+        <button class="w3-button w3-gray w3-xlarge" onclick="w3_open()">☰</button>
+        
+      </div>
+      <div class="w3-con
+      tainer text-center w3-sand pt-5">
+        <h1><span class="font-weight-bold" style="font-style: italic;">M</span>y <span class="font-weight-bold" style="font-style: italic;">P</span>rofile</h1>
+      </div>
+      <section class="p-5" id="home" style="background-image: url('https://www.jffederalcriminaldefense.com/wp-content/themes/froelich/images/bg2.jpg');background-size:cover;">
+          <div class="container">
+              <div class="row p-5">
+                  <div class="col-md-6 text-center">
+                    <img src="images/1223.jpg"  alt="Image cant show" style=" border-radius: 3rem;height: 17rem;width: 17rem; margin-top: 50px;">  
+                  </div>
+                  <div class="col-md-6 text-center my-auto" style="padding-top: 50px;">
+                    <h1 style="font-family: 'Reggae One', cursive;color: #fff;" >MOHAMMED SHAHADAN</h1>
+                    <h5 style="font-family: 'Pattaya', sans-serif;color: #fff;">College Of Engineering<br>Trrivandrum,Kerala,India</h5>
+                  </div>
+              </div>
+            <p class="text-center font-weight-bold" style="font-size:large;padding-bottom: 100px;color: gray;">WEB DESIGNER</p>
+          </div>
+      </section>
+      <section class="p-5 w3-gray" id="Languages">
+        <div class="container">
+          <h2 class="text-center font-weight-bold w3-text-sand">Languages</h2>
+          <div class="row" style="padding-top: 25px;">
+            <div class="col-md-4 ">
+              <div class="card align-items-center" style="height: 14rem;">
+                <img class="card-img-top m-4" style ="height:7em;width:7em;" src="data:image/png;base64,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" alt="Card img cap">
+                <div class="card-body">
+                    <p class="card-text font-weight-bold">HTML</p>
+                </div> 
+             </div>
+             <div class="container p-3">
+             <div class="progress bg-secondary">
+             <div class="progress-bar w3-sand w3-text-black" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+               75%
+             </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card align-items-center " style="height: 14rem;">
+                  <img class="card-img-top m-4" style ="height:7rem;width:7rem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9c01S6mDjzJA_z4NSwaNYkmTBWrBC2sHwHA&usqp=CAU" alt="Card img cap">
+                  <div class="card-body">
+                      <p class="card-text font-weight-bold">CSS</p>
+                 </div> 
+              </div>
+              <div class="container p-3">
+                <div class="progress bg-secondary">
+                <div class="progress-bar w3-sand w3-text-black" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                  50%
+                </div>
+               </div>
+               </div>
+           </div>
+           <div class="col-md-4 ">
+            <div class="card align-items-center" style="height: 14rem;">
+                <img class="card-img-top m-4" style ="height:7rem;width:8rem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0j8JS1_nau7zTD5O6-i3opjV29qY7_oVEow&usqp=CAU" alt="Card img cap">
+                <div class="card-body">
+                    <p class="card-text font-weight-bold">Java Script</p>
+                </div> 
+            </div>
+            <div class="container p-3">
+              <div class="progress bg-secondary">
+              <div class="progress-bar w3-sand w3-text-black" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                75%
+              </div>
+             </div>
+             </div>
+        </div>
+         </div>
+        </div>
+      </section>
+      <section id="Qualification" class="p-5" style="background-image: url('https://th.bing.com/th/id/Rf8d14088e1b9b4ccce2a59a343ada2f9?rik=X6W%2baCm03i3M9w&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f5%2fe%2f9%2f65641.jpg&ehk=AWpzM2QMRlDMY8HRH8A1CHwL4hU8iPjMmPXGWABHRjo%3d&risl=&pid=ImgRaw');">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="poda bg-secondary">
+                <h2 class="text-center font-weight-bold pt-4">Education</h2>
+               <div class="total pt-3">
+                 <p><span class="box-text">High School</span>-MSP EMHS,Malappuram</p>
+                 <p><span class="box-text">Higher Secondary</span>-MSP HHS,Malappuram</p>
+                 <p><span class="box-text">Degree(studying)</span><div class="degree">-Btech Computer science<br> COLLEGE OF ENGINEERING <br>Trivandrum</div></p>
+               </div>
+              </div>  
+            </div>
+            <div class="col-md-6 pb-1">
+              <div class="poda bg-secondary text-center">
+            <h2 class="font-weight-bold pt-3 ">I Can..</h2>
+    
+            <div class="card text-center bg-secondary"  >
+              <div class="card-body">
+                <ul class="font-weight-bold">Create Responsive Webdesign</ul>
+                <ul class="font-weight-bold">Edit photoes in mobiles</ul>
+                <a href="webdesign.html" class="card-link">webdesign</a>
+                <a href="photo.html" class="card-link">Mobile Photography</a>
+              </div>
+            </div>
+            </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section class="p-4 w3-sand" id="contact" >
+        <div class="container">
+          <h2 class="text-center font-weight-bold w3-text-black">Contact</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <form>
+                <div class="form-row">  
+                <div class="form-group col-md-6">
+                    <label for="forInputFullname">Fullname</label>
+                    <input type="text" class="form-control" id="exampleInputFname" placeholder="Fullname">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="exampleInputPassword1">Place</label>
+                    <input type="text" class="form-control" id="exampleInputPlace" placeholder="Place">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="exampleInputPassword1">Mobile</label>
+                    <input type="tel" class="form-control" id="exampleInputMobileNo" placeholder="Mobile no.">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="examoleInputMessage">Message</label>
+                    <textarea cols="30" rows="10"  class="form-control" placeholder="Message me..."></textarea>
+                </div>
+                <div class=" col-md-6">
+                  <div class="mapouter"><div class="gmap_canvas p-4 form-group img-fluid"><iframe height="268" width="410" id="gmap_canvas" src="https://maps.google.com/maps?q=uphill%20malappuram&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="2" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-a.com"></a><br><style>.mapouter{position:relative;text-align:left;height:268px;width: 550px;}</style><a href="https://www.embedgooglemap.net">google maps embed code generator</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:268px;}</style></div></div>
+                </div>
+                <div class="form-group col-md-12 text-center p-4">
+                    <button type="submit" class="btn btn-primary btn-lg bg-secondary" style="border-color: grey;">Submit</button>
+                </div>
+                </div>
+             </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="w3-gray text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i class="fab fa-whatsapp"></i>
+              <i class="fab fa-facebook-f"></i>
+              <p>Copyright.MSK</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script>
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+        }
+        
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+        </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c2d1f835ba.js" crossorigin="anonymous"></script>
+  </body>
+</html>

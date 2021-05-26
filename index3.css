@@ -1,0 +1,17 @@
+.box-text{
+    font-weight: bold;
+    font-style: italic;
+    float: left;
+}
+.poda{
+    border-radius: 5px;
+    height: 320px;
+}
+
+.degree{
+    float: left;
+}
+.total{
+    padding-left: 100px;
+}
+
