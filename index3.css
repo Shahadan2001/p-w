@@ -5,7 +5,7 @@
 }
 .poda{
     border-radius: 2rem;
-    height: 19rem;
+    height: 21.5rem;
 }
 
 .degree{
@@ -23,10 +23,8 @@ body{
     border: solid 1px bisque;
     border-radius: 5px;
     padding:8px;
-    text-decoration: none;
     color:red;
     font-size: 18px;
-    text-decoration: none;
     cursor: pointer;
 
 }
@@ -35,20 +33,27 @@ body{
     border: solid 1px bisque;
     border-radius: 5px;
     padding:8px;
-    text-decoration: none;
     color:red;
     font-size: 18px;
-    text-decoration: none;
     cursor: pointer;
 }
 .buttonl:hover{
     background-color: burlywood;
     border:burlywood;
     color: red;
+    text-decoration: none;
 }
 .buttonr:hover{
     background-color: burlywood;
     border:burlywood;
     color: red;
+    text-decoration: none;
+}
+}
+.text_left{
+    font-size: 20px;
+}
+.text_left span{
+    font-weight: bold;
 }
 
