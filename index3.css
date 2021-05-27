@@ -4,14 +4,14 @@
     float: left;
 }
 .poda{
-    border-radius: 5px;
-    height: 320px;
+    border-radius: 2rem;
+    height: 18rem;
 }
 
 .degree{
     float: left;
 }
 .total{
-    padding-left: 100px;
+    padding-left: 2rem;
 }
 
