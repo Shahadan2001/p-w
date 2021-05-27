@@ -14,4 +14,7 @@
 .total{
     padding-left: 2rem;
 }
-
+body{
+    margin:0;
+    padding-left:0;
+}
