@@ -18,3 +18,37 @@ body{
     margin:0;
     padding-left:0;
 }
+.buttonl{
+    background-color: bisque;
+    border: solid 1px bisque;
+    border-radius: 5px;
+    padding:8px;
+    text-decoration: none;
+    color:red;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.buttonr{
+    background-color: bisque;
+    border: solid 1px bisque;
+    border-radius: 5px;
+    padding:8px;
+    text-decoration: none;
+    color:red;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.buttonl:hover{
+    background-color: burlywood;
+    border:burlywood;
+    color: red;
+}
+.buttonr:hover{
+    background-color: burlywood;
+    border:burlywood;
+    color: red;
+}
+
