@@ -45,12 +45,26 @@ body{
     color: red;
     text-decoration: none;
 }
-.text_left{
-    font-size: 20px;
-}
 .text_bold{
     font-weight:bold;
 }
-.text_right{
-    font-size: 20px;
+@media screen and (min-width:601px) {
+    .text_right{
+        font-size:20px;
+    }
+}
+@media screen and (max-width:600px) {
+    .text_right{
+        font-size:18px;
+    }
+}
+@media screen and (min-width:601px) {
+    .text_left{
+        font-size:20px;
+    }
+}
+@media screen and (max-width:600px) {
+    .text_left{
+        font-size:18px;
+    }
 }
