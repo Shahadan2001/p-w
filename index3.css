@@ -7,7 +7,6 @@
     border-radius: 2rem;
     height: 22rem;
 }
-
 .degree{
     float: left;
 }
@@ -46,13 +45,12 @@ body{
     color: red;
     text-decoration: none;
 }
-}
 .text_left{
     font-size: 20px;
     margin-left: 3rem;
 }
-.text_left span{
-    font-weight: bold;
+.text_bold{
+    font-weight:bold;
 }
 .text_right{
     font-size: 20px;
