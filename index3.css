@@ -72,3 +72,7 @@ body{
          margin-left:0;
     }
 }
+.btn_text{
+    padding:3px;
+    color:darkcyan;
+}
