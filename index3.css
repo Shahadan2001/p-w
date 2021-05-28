@@ -5,7 +5,7 @@
 }
 .poda{
     border-radius: 2rem;
-    height: 21.5rem;
+    height: 22rem;
 }
 
 .degree{
@@ -52,8 +52,12 @@ body{
 }
 .text_left{
     font-size: 20px;
+    margin-left: 3rem;
 }
 .text_left span{
     font-weight: bold;
 }
-
+.text_right{
+    font-size: 20px;
+    margin-left: 3rem;
+}
