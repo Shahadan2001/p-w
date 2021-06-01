@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index3.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="w3-sidebar w3-bar-block w3-border-right w3-gray" style="display:none;z-index: 2;" id="mySidebar">
@@ -130,27 +131,27 @@
           <div class="text-center pt-3"><i class="fas fa-phone-square font-weight-bold" style="font-size:3rem;"><span>Contact</span></i></div>
           <div class="row">
             <div class="col-md-12 pt-3">
-              <form>
+              <form id="submit-form">
                 <div class="form-row">  
                 <div class="form-group col-md-6">
                     <label for="forInputFullname">Fullname</label>
-                    <input type="text" class="form-control" id="exampleInputFname" placeholder="Fullname">
+                    <input type="text" class="form-control" name="Fullname" placeholder="Fullname">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="exampleInputPassword1">Place</label>
-                    <input type="text" class="form-control" id="exampleInputPlace" placeholder="Place">
+                    <input type="text" class="form-control" name="Place" placeholder="Place">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter email">
+                    <input type="email" class="form-control" name="Email" placeholder="Enter email">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="exampleInputPassword1">Mobile</label>
-                    <input type="tel" class="form-control" id="exampleInputMobileNo" placeholder="Mobile no.">
+                    <input type="tel" class="form-control" name="Mobile" placeholder="Mobile no.">
                 </div>
                 <div class="form-group col-md-12">
                     <label for="examoleInputMessage">Message</label>
-                    <textarea cols="30" rows="10"  class="form-control" placeholder="Message me..."></textarea>
+                    <textarea cols="30" rows="10"  class="form-control" placeholder="Message me..." name="Message"></textarea>
                 </div>
                 <div class="col-md-12 form-group">
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15663.785319589422!2d76.07970062667262!3d11.042650874258259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba635606be70f99%3A0x833f4f81f0f99bad!2sUp%20Hill%2C%20Malappuram%2C%20Kerala!5e0!3m2!1sen!2sin!4v1622207486263!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -176,18 +177,25 @@
           </div>
         </div>
       </footer>
-      <script>
-        function w3_open() {
-          document.getElementById("mySidebar").style.display = "block";
-        }
-        
-        function w3_close() {
-          document.getElementById("mySidebar").style.display = "none";
-        }
-        function display(){
-          alert("Form submitted");
-        }
-        </script>
+       <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbwR6d0P8Vu-_yBuEyUJ57qzb4DeT6-FmL4iMXlnUOz6iqg68FMH63q2xrgc9gXsUQ/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+      </script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
