@@ -131,7 +131,7 @@
           <div class="text-center pt-3"><i class="fas fa-phone-square font-weight-bold" style="font-size:3rem;"><span>Contact</span></i></div>
           <div class="row">
             <div class="col-md-12 pt-3">
-              <form id="contactForm" action="">
+              <form id="submit-form" action="">
                 <div class="form-row">  
                 <div class="form-group col-md-6">
                     <label for="forInputFullname">Fullname</label>
@@ -177,12 +177,12 @@
           </div>
         </div>
       </footer>
-      <script>
-        $("#contactForm").submit((e)=>{
+     <script>
+        $("#submit-form").submit((e)=>{
             e.preventDefault()
             $.ajax({
                 url:"https://script.google.com/macros/s/AKfycbwR6d0P8Vu-_yBuEyUJ57qzb4DeT6-FmL4iMXlnUOz6iqg68FMH63q2xrgc9gXsUQ/exec",
-                data:$("#contactForm").serialize(),
+                data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){
                     alert("Form submitted successfully")
